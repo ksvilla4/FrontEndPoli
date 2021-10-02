@@ -1,17 +1,170 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link href="css/bootstrap.min.css" rel="stylesheet" integrity="" crossorigin="anonymous">
-    <link href="css/style.css" rel="stylesheet">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>User</title>
-  </head>
-  <body>
-    <h1>User</h1>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/sidebars.css" rel="stylesheet" />
 
-    <script src="js/bootstrap.bundle.min.js" integrity="" crossorigin="anonymous"></script>
-  </body>
+  <title>Users</title>
+</head>
+
+<body>
+  <main>
+    <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark b-nav">
+      <a href="/" class="
+            d-flex
+            align-items-center
+            mb-3
+            me-md-auto
+            text-white text-decoration-none
+          ">
+        <span class="fs-4">BOCA</span>
+      </a>
+      <ul class="nav nav-pills flex-column mb-auto">
+        <li><a href="#" class="nav-link text-white">Runs</a></li>
+        <li><a href="#" class="nav-link text-white">Task</a></li>
+        <li><a href="#" class="nav-link text-white">Score</a></li>
+        <li><a href="#" class="nav-link text-white">Site</a></li>
+        <li><a href="#" class="nav-link text-white">Califications</a></li>
+        <li><a href="#" class="nav-link text-white">Contest</a></li>
+        <li><a href="user.html" class="nav-link text-white">Users</a></li>
+        <li><a href="#" class="nav-link text-white">Logs</a></li>
+        <li><a href="#" class="nav-link text-white">Problems</a></li>
+        <li><a href="#" class="nav-link text-white">Reports</a></li>
+        <li><a href="language.html" class="nav-link text-white">Languages</a></li>
+        <li><a href="#" class="nav-link text-white">Backups</a></li>
+        <li><a href="#" class="nav-link text-white">Answers</a></li>
+        <li><a href="#" class="nav-link text-white">Misc</a></li>
+      </ul>
+      <hr />
+      <ul class="nav nav-pills flex-column mb-auto">
+        <li><a href="#" class="nav-link text-white">Options</a></li>
+        <li><a href="#" class="nav-link text-white">Logout</a></li>
+      </ul>
+    </div>
+    <div class="b-container">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <label class="fw-bold m-4">Users</label>
+          </div>
+          <div class="col">
+            <label class="fw-bold float-end m-4">Administrator</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+            <div class="card border-0 shadow rounded-3 my-3">
+              <div class="card-body p-4 p-sm-5">
+                <form>
+                  <div class="form-floating mb-3">
+                    <input class="form-control" id="inputUserSiteNumber" />
+                    <label for="inputUserSiteNumber">User Site Number</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input class="form-control" id="inputUserNumber" />
+                    <label for="inputUserNumber">User Number</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input class="form-control" id="inputUsername" />
+                    <label for="inputUsername">Username</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input class="form-control" id="inputIcpsId" />
+                    <label for="inputIcpsId">ICPC ID</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input class="form-control" id="inputType" />
+                    <label for="inputType">Type</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input class="form-control" id="inputEnabled" />
+                    <label for="inputEnabled">Enabled</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input class="form-control" id="inputMultilogins" />
+                    <label for="inputMultilogins">MultiLogins (local teams should be set to No)</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input class="form-control" id="inputUserFullname" />
+                    <label for="inputUserFullname">User Full Name</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input class="form-control" id="inputDescription" />
+                    <label for="inputDescription">User Description</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input class="form-control" id="inputUserIp" />
+                    <label for="inputUserIp">User IP</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input class="form-control" id="inputPassword" />
+                    <label for="inputPassword">Password</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input class="form-control" id="inputRetypePassword" />
+                    <label for="inputRetypePassword">Retype Password</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input class="form-control" id="inputAllowPasswordChange" />
+                    <label for="inputAllowPasswordChange">Allow password change</label>
+                  </div>
+                  <div class="form-floating mb-5">
+                    <input class="form-control" id="inputAdminPassword" />
+                    <label for="inputAdminPassword">Admin (this user) Password</label>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <a class="btn btn-primary btn-form fw-bold" href="#">Send</a>
+                    </div>
+                    <div class="col">
+                      <a class="btn btn-primary btn-form fw-bold float-end" href="#">Cancel</a>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="card border-0 shadow rounded-3 m-4">
+              <div class="card-body">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">User</th>
+                      <th scope="col">Site</th>
+                      <th scope="col">Username</th>
+                      <th scope="col">ICPC ID</th>
+                      <th scope="col">Type</th>
+                      <th scope="col">IP</th>
+                      <th scope="col">LastLogin</th>
+                      <th scope="col">LastLogout</th>
+                      <th scope="col">Enabled</th>
+                      <th scope="col">Multi</th>
+                      <th scope="col">Fullname</th>
+                      <th scope="col">Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
